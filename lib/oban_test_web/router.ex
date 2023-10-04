@@ -7,6 +7,8 @@ defmodule ObanTestWeb.Router do
 
   scope "/api", ObanTestWeb do
     pipe_through :api
+
+    post "/test", TestController, :test
   end
 
   # Enables LiveDashboard only for development
