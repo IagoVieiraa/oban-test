@@ -46,7 +46,9 @@ defmodule ObanTest.MixProject do
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
       {:oban, "~> 2.13"},
-      {:httpoison, "~> 1.8"}
+      {:httpoison, "~> 1.8"},
+      {:cowboy, "~> 2.10"},
+      {:plug, "~> 1.15"}
     ]
   end
 

@@ -49,7 +49,10 @@ config :logger, :console,
 config :oban_test, Oban,
   repo: ObanTest.Repo,
   plugins: [Oban.Plugins.Pruner],
-  queues: [default: 10]
+  queues: [
+    default: 10,
+    downloads: 5
+  ]
 
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
